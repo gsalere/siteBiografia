@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.content{
+    width:100%; 
+    float:left; 
+    position:relative;
+}
+
+.header {
+    box-shadow: 0px 0px 20px rgba(250, 250, 250, 0.1);
+    background-image: linear-gradient(to right, black 10%, #594B05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    float: left;
+    padding-top: 14px;
+    
+    
+   }
+
+   .header, .nav ul {
+        list-style: none;
+        overflow: hidden;
+        background-color: #ffffff;
+   }
+   
+ 
+   .header li {
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0.7em 0.5em;
+        
+        transition:.3s;
+        border-bottom: 1px #f7f7f7 solid;
+        color:#ffffff;  
+   }
+   
+
+   .header li:hover,
+    .header .btn-mobile:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color:#d4f405; 
+    }
+
+    .header .logo {
+        display: block;
+        float: left;
+        max-width: 25%;
+        top: 20%;
+        left: 2%; 
+      }
+
+    .header .logo:hover{
+        cursor: pointer;
+        background-color: #333a07;
+        border-radius: 50px;
+    }
+      
+      
+      .header .nav {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+      }
+      
+
+      
+.header .mobile-icon {
+    cursor: pointer;
+    display: inline-block;
+    float:right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .mobile-icon .hamburguer {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .mobile-icon .hamburguer:before,
+  .header .mobile-icon .hamburguer:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .mobile-icon .hamburguer:before {
+    top: 5px;
+  }
+  
+  .header .mobile-icon .hamburguer:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .mobile-btn {
+    display: none;
+  }
+  
+  .header .mobile-btn:checked ~ .nav {
+    max-height: 240px;
+  }
+  
+  .header .mobile-btn:checked ~ .mobile-icon .hamburguer {
+    background: transparent;
+  }
+  
+  .header .mobile-btn:checked ~ .mobile-icon .hamburguer:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .mobile-btn:checked ~ .mobile-icon .hamburguer:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .mobile-btn:checked ~ .mobile-icon:not(.steps) .hamburguer:before,
+  .header .mobile-btn:checked ~ .mobile-icon:not(.steps) .hamburguer:after {
+    top: 0;
+  }
+  
+  .container {
+  
+    width:100%;
+    float:left;
+    margin-top:73px;    
+  
+  }
+  
+  .content { 
+  
+    float:left; 
+    width:92%; 
+    margin:0 4%;  
+   
+  }
+  
+  
+.container{
+    background-image: linear-gradient(to bottom, #0D0D0D 80%, #594B05);
+}
+
+
+.conteudo{
+    background-color: #ffffff;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.conteudo img{
+    padding: 30px 0 30px 0;
+    max-width: 100%;
+    height: 200px;
+
+    border-radius: 50px;
+}
+.conteudo li{
+    list-style-type: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+}
+
+
+
+h3{
+    color: #594B05;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #BFA10B;
+    font-size:1.5em
+}
+
+p{
+    text-align: justify;
+    line-height: 30px;
+    
+}
+
+#click{
+    margin: auto;
+    display: block;
+}
+
+#click:hover{
+    cursor: pointer;
+}
+
+.video{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.lista{
+    /* aqui o que importa é o UL, o resto é pra estética do demo.          */
+        position:relative;  /* reset do position, não relacionado ao demo, mas bom pra uso geral.  */
+        margin:0;           /* Zeramos as margens e o padding do UL para as células.encostarem     */
+        padding:0;
+        width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */        /* aqui foi feito pra fins de demonstração apenas.                     */
+}
+
+.premios{
+    display: block;
+    flex-direction: row;
+    width: 50%;
+    text-align: center;
+}
+
+.premios:nth-child(odd) {          /* este css será aplicato nos LI impares (1, 3, 5... ).         */
+    clear:both;                /* forçamos a quebra de linha por segurança...                  */
+    float:left;                /* ... e o alinhamos à esquerda.                                */
+    width:50%;                 /* Aplicamos 50% na esquerda, os da direita "herdam" o resto.   */
+  }
+
+.premios:nth-child(4n+2),          /* aqui pulamos de 4 em 4 itens começando do 2 ( 2, 6, ...).    */
+.premios:nth-child(4n+4) { 
+    float: right;        /* aqui de 4 em 4 começando do 3 ( 3, 7, ... )                  */
+    /* e mudamos a cor, dando efeito de quadriculado                */
+}
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    
+    .header li { float:left; }
+    
+    .header li a {
+      
+      padding: 15px 30px;
+      margin-top: 10px;
+      border-radius: 6px;
+    
+    }
+  
+    .header .nav {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    
+    .header .mobile-icon { display:none; }
+  
+    .header li a {
+    
+      transition:.3s;
+      border-bottom:0; 
+    
+    }
+
+    .container{
+        margin-top: 55px;
+    }
+  
+  }
+

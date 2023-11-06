@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellingham</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsivo.css">
+    <link rel="shortcut icon" href="./imagens/favicon-16x16.png" type="image/x-icon">
+   
+</head>
+<body>
+    <header class="header">
+        <div class="content">
+            
+            <img class="logo" src="./imagens/logopag.png" alt="">
+
+            <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+            <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+
+            <ul class="nav">
+                    <li><a href="#home" title="home"></a> Home</li>
+                    <li><a href="#inicio" title="inicio"></a>Início da Carreira</li>
+                    <li><a href="#momentos" title="momentos"></a>Melhores momentos</li>
+                    <li><a href="#titulos" title="conq"></a>Conquistas</li>
+                    <li><a href="#premios" title="premio"></a>Prêmios individuais</li>         
+            </ul>
+            
+        </div>
+    </header>
+    <main class="container">
+        <!--Foto do Bellingham com interação ao passar o mouse(ou clicar) aparecer ele de braços abertos e tocar a música, se possível raios no fundo.  -->
+        
+        <div class="conteudo" id="home">
+            <h3  id="inicio">Início da Carreira</h3>
+            <div>
+                <p>Sua trajetória se iniciou no sub-8 no Birmingham City, onde aos 14 anos de idade estreou no time sub-18 além de passar pelas seleções de base da Inglaterra.</p>
+                <p>Nesse mesmo clube fez a estreia profissional.</p>
+                <!--Imagem Bellingham no Birminghan-->
+                <p>Ele foi tão importante ao clube devido ao retorno financeiro, que teve sua camisa 22 aposentada na história do Birmingham</p>
+                <img src="./imagens/birminghamJude.webp" alt="">
+            </div>
+            <h4>Borussia Dortmund</h4>
+            <div>
+                <p>O jogador foi vendido por 23 milhões de euros (R$ 136 milhões) ao clube alemão, o qual jogou 132 jogos e marcou 24 gols, sendo uma peça fundamental no clube.</p>
+                 <!--Imagem Bellingham no Borussia-->
+                 <img src="./imagens/judeBorussia.webp" alt="">
+            </div>
+            <h4>Real Madrid</h4>
+            <div>
+                <p>Em 2023, o gigante espanhol contrata o meio campista Jude Bellingham por 103 milhões de euros (R$ 543 milhões), em negociação com o Borussia Dortmund.</p>
+                <p>Em poucos jogos já se tornou um querido pela torcida devido a um alto número de gols e assistências que vêm crescendo a cada jogo, Jude é um jogador fenomenal e a esperança do futuro do Real Madrid.</p>      
+                <img id="click" src="./imagens/judeReal.png" onclick="trocar()" alt="">    
+            </div>
+
+            <h3 id="momentos">Compilação das melhores jogadas do Bellingham</h3>
+            <div>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/MA6ssSKNAfI?si=5VtPYtKs8SGhcO0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <h3 id="titulos">Títulos</h3>
+            <ul>
+                <img class="copaAle" src="./imagens/copaAlemanha.png" alt="">
+                <li>Copa da Alemanha: 20/21</li>
+                <br>
+            </ul>
+
+            <h3 id="premios"> Principais Prêmios Individuais</a></h3>
+                    <ul class="lista">
+                
+                        <li class="premios"><img src="./imagens/melhorMesEFL.jpg" alt=""><br>Jovem Jogador do Mês da EFL: Novembro de 2019</li>
+
+                        <li class="premios"><img src="./imagens/jogadorMes.png" alt=""><br>Melhor Jogador do Mês da Bundesliga: Set/20</li>
+                     
+                        <li class="premios"><img src="./imagens/trofeuBundes.jpg" alt=""><br>Melhor jogador da Bundesliga: 2022–23</li>
+                   
+                        <li class="premios"><img src="./imagens/jogadorAno.jfif" alt=""><br>Melhor Jogador Jovem Sub-20 do Mundo: 2022</li>
+                        
+                        <li class="premios"><img src="./imagens/laLiga.jpg" alt=""><br>Jogador do mês da La Liga: Agosto/23</li>
+                       
+                        <li class="premios"><img src="./imagens/trofeuKopa.jfif" alt=""><br>Troféu Kopa: 2023</li>
+              
+                        
+                    </ul>
+                </div>
+                
+        </div>
+    </main>
+</body>
+<script src="./index.js"></script>
+</html>
